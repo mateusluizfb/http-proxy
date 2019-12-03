@@ -24,11 +24,13 @@ defmodule Proxy.Mixfile do
   end
 
   defp deps do
-    [{:cowboy, "~> 1.0.0"},
-     {:plug, "~> 1.0"},
-     {:exrm, "~> 0.19.0"},
-     {:httpoison, "~> 0.8.0"},
-     {:socket, github: "bitwalker/elixir-socket"},
-     {:timex, "~> 1.0.0"}]
+    [
+      {:cowboy, "~> 1.0.0"},
+      {:plug, "~> 1.0"},
+      {:distillery, "~> 2.1"},
+      {:httpoison, "~> 0.8.0"},
+      {:socket, "~> 0.3"},
+      {:timex, "~> 1.0.0"},
+   ]
   end
 end

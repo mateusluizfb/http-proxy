@@ -17,7 +17,7 @@ defmodule Proxy.HttpProxyPlug do
           Cache.insert(url, %{resp | headers: headers})
         end
         %{conn | resp_headers: headers}
-        |> send_resp(resp.status_code, resp.body)
+          |> send_resp(resp.status_code, resp.body)
       {:error, reason} ->
         conn
         |> send_resp(500, reason)
