@@ -9,9 +9,8 @@ defmodule HttpEditor do
     # new_headers
   end
 
-  def edit_body(binary_body) do
-    IO.inspect binary_body
-    # raw_body = :unicode.characters_to_list(binary_body, {:utf16, :little})
-    # IO.inspect raw_body
+  def edit_body(body) do
+    IO.inspect body
+    String.replace(body, "h3", "h6")
   end
 end
